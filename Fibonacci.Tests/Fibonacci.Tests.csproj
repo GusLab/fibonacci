@@ -54,6 +54,15 @@
     <Compile Include="Runners.Tests\RecursiveFibonacci.Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FibonacciLib\FibonacciLib.csproj">
+      <Project>{1b9a7dd3-13a9-42b0-8d4e-441c2678c4db}</Project>
+      <Name>FibonacciLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
