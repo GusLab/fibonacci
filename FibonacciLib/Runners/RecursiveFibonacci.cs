@@ -9,7 +9,22 @@ namespace FibonacciLib.Runners
     {
         public void Compute(long sequenceRange)
         {
-            AddToResult(0);
+            RecurseToNextNumber(0, 1, 1, sequenceRange);
+        }
+
+        void RecurseToNextNumber(long previousNumber,
+                                 long nextNumber,
+                                 long recurseIterator,
+                                 long sequenceRange)
+        {
+            if (recurseIterator <= sequenceRange)
+            {
+                AddToResult(previousNumber);
+                RecurseToNextNumber(nextNumber,
+                                    previousNumber + nextNumber,
+                                    recurseIterator + 1,
+                                    sequenceRange);
+            }
         }
     }
 }

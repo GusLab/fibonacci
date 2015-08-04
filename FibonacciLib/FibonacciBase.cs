@@ -12,7 +12,7 @@ namespace FibonacciLib
         public string Result { get { return _result; } }
         protected void AddToResult(long nextFibonacciNumber)
         {
-            _result = " " + _result;
+            _result = _result + " " + nextFibonacciNumber;
             _result = _result.Trim();
         }
     }
