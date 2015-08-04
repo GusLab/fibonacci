@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci.Tests", "Fibonacci.Tests\Fibonacci.Tests.csproj", "{208838A8-EF5A-4AD3-9DFB-84C45C9F2A34}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Fibonacci", "ConsoleApp1\Fibonacci.xproj", "{0F2D0D2F-0E01-4E08-8799-BF0D1B610588}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Fibonacci", "Fibonacci\Fibonacci.xproj", "{0F2D0D2F-0E01-4E08-8799-BF0D1B610588}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ED74E61-F71E-4D95-9AE8-F7A6088408AA}"
 	ProjectSection(SolutionItems) = preProject
