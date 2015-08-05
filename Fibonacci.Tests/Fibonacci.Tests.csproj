@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Runners.Tests\GeneratorFibonacci.Test.cs" />
     <Compile Include="Runners.Tests\IterativeFibonacci.Test.cs" />
     <Compile Include="Runners.Tests\RecursiveFibonacci.Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

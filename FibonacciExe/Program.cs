@@ -52,6 +52,7 @@ namespace FibonacciExe
             List<IFibonacci> implementationList = new List<IFibonacci>();
             implementationList.Add(new IterativeFibonacci());
             implementationList.Add(new RecursiveFibonacci());
+            implementationList.Add(new GeneratorFibonacci());
 
             return implementationList;
         }
