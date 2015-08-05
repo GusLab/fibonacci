@@ -9,7 +9,7 @@ namespace FibonacciLib
     public sealed class FibonacciResult
     {
         string _result;
-        public string Result { get { return _result; } }
+        public string Get { get { return _result; } }
         public void Add(long nextFibonacciNumber)
         {
             _result = _result + " " + nextFibonacciNumber;

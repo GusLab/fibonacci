@@ -17,7 +17,7 @@ namespace Fibonacci.Tests.Runners.Tests
             var iterativeImpl = new IterativeFibonacci();
 
             iterativeImpl.Compute(9);
-            actualConsoleOutput = iterativeImpl.Result.ToString();
+            actualConsoleOutput = iterativeImpl.Result.Get;
 
             Assert.AreEqual(expectedConsoleOutput,actualConsoleOutput,false);
         }

@@ -8,7 +8,7 @@ namespace FibonacciLib
 {
     public class FibonacciBase
     {
-        protected FibonacciResult Result { get; set; }
+        public FibonacciResult Result { get; set; }
 
         public FibonacciBase()
         {

@@ -17,7 +17,7 @@ namespace Fibonacci.Tests.Runners.Tests
             var recursiveImpl = new RecursiveFibonacci();
 
             recursiveImpl.Compute(9);
-            actualConsoleOutput = recursiveImpl.Result.ToString();
+            actualConsoleOutput = recursiveImpl.Result.Get;
 
             Assert.AreEqual(expectedConsoleOutput, actualConsoleOutput, false);
         }
