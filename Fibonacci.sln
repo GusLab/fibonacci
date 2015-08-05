@@ -4,11 +4,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci.Tests", "Fibonacci.Tests\Fibonacci.Tests.csproj", "{208838A8-EF5A-4AD3-9DFB-84C45C9F2A34}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0ED74E61-F71E-4D95-9AE8-F7A6088408AA}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciLib", "FibonacciLib\FibonacciLib.csproj", "{1B9A7DD3-13A9-42B0-8D4E-441C2678C4DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciExe", "FibonacciExe\FibonacciExe.csproj", "{D0019007-E85D-421C-975A-6B6ABB926257}"
