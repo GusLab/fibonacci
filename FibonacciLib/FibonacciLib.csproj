@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Workers\AsynchFibonacciWorker.cs" />
     <Compile Include="Enumerators\FibonacciEnumerator.cs" />
     <Compile Include="FibonacciBase.cs" />
     <Compile Include="FibonacciResult.cs" />
     <Compile Include="IFibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runners\AsynchFibonacci.cs" />
     <Compile Include="Runners\GeneratorFibonacci.cs" />
     <Compile Include="Runners\IterativeFibonacci.cs" />
     <Compile Include="Runners\RecursiveFibonacci.cs" />

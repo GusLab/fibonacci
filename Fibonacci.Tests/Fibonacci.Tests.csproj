@@ -52,11 +52,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Enumerators.Tests\FibonacciEnumerator.Test.cs" />
     <Compile Include="Runners.Tests\GeneratorFibonacci.Test.cs" />
     <Compile Include="Runners.Tests\IterativeFibonacci.Test.cs" />
     <Compile Include="Runners.Tests\RecursiveFibonacci.Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FibonacciResult.Test.cs" />
+    <Compile Include="Runners.Tests\AsynchFibonacci.Test.cs" />
+    <Compile Include="Workers.Tests\AsynchFibonacciWorker.Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

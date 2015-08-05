@@ -53,6 +53,7 @@ namespace FibonacciExe
             implementationList.Add(new IterativeFibonacci());
             implementationList.Add(new RecursiveFibonacci());
             implementationList.Add(new GeneratorFibonacci());
+            implementationList.Add(new AsynchFibonacci());
 
             return implementationList;
         }
