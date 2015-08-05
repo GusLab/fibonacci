@@ -12,7 +12,12 @@ namespace FibonacciLib
 
         public FibonacciBase()
         {
-            Result = new FibonacciResult();
+            Result = new FibonacciResult();         
+        }
+
+        public string GetResult()
+        {
+            return Result.Get;
         }
     }
 }

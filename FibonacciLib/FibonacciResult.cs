@@ -10,10 +10,15 @@ namespace FibonacciLib
     {
         string _result;
         public string Get { get { return _result; } }
-        public void Add(long nextFibonacciNumber)
+        public void Add(ulong nextFibonacciNumber)
         {
             _result = _result + " " + nextFibonacciNumber;
             _result = _result.Trim();
+        }
+
+        public FibonacciResult()
+        {
+            _result = "";
         }
     }
 }

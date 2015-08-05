@@ -11,15 +11,15 @@ namespace FibonacciLib.Runners
         {
         }
 
-        public void Compute(long sequenceRange)
+        public void Compute(ulong sequenceRange)
         {
             RecurseToNextNumber(0, 1, 1, sequenceRange);
         }
 
-        void RecurseToNextNumber(long previousNumber,
-                                 long nextNumber,
-                                 long recurseIterator,
-                                 long sequenceRange)
+        void RecurseToNextNumber(ulong previousNumber,
+                                 ulong nextNumber,
+                                 ulong recurseIterator,
+                                 ulong sequenceRange)
         {
             if (recurseIterator <= sequenceRange)
             {

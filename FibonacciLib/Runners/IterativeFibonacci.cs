@@ -11,15 +11,19 @@ namespace FibonacciLib.Runners
         {
         }
 
-        public void Compute(long sequenceRange)
+        public void Compute(ulong sequenceRange)
         {
-            long previousNumber = 0, 
+            if(sequenceRange == 0)
+            {
+                return;
+            }
+            ulong previousNumber = 0, 
                  nextNumber = 1, 
                  sumOfPreviousAndNext = 0;
             Result.Add(previousNumber);
             Result.Add(nextNumber);
 
-            for (int i = 2; i < sequenceRange; i++)
+            for (uint i = 2; i < sequenceRange; i++)
             {
                 sumOfPreviousAndNext = previousNumber + nextNumber;
                 Result.Add(sumOfPreviousAndNext);

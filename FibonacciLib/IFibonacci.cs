@@ -7,6 +7,7 @@ namespace FibonacciLib
 {
     public interface IFibonacci
     {
-        void Compute(long sequenceRange);
+        void Compute(ulong sequenceRange);
+        string GetResult();
     }
 }
