@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace FibonacciLib
 {
-    public abstract class FibonacciBase
+    public class FibonacciBase
     {
-        protected string _result;
-        public string Result { get { return _result; } }
-        protected void AddToResult(long nextFibonacciNumber)
+        protected FibonacciResult Result { get; set; }
+
+        public FibonacciBase()
         {
-            _result = _result + " " + nextFibonacciNumber;
-            _result = _result.Trim();
+            Result = new FibonacciResult();
         }
     }
 }

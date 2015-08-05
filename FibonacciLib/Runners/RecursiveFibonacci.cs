@@ -7,6 +7,10 @@ namespace FibonacciLib.Runners
 {
     public sealed class RecursiveFibonacci : FibonacciBase, IFibonacci
     {
+        public RecursiveFibonacci() : base()
+        {
+        }
+
         public void Compute(long sequenceRange)
         {
             RecurseToNextNumber(0, 1, 1, sequenceRange);
@@ -19,12 +23,13 @@ namespace FibonacciLib.Runners
         {
             if (recurseIterator <= sequenceRange)
             {
-                AddToResult(previousNumber);
+                Result.Add(previousNumber);
                 RecurseToNextNumber(nextNumber,
                                     previousNumber + nextNumber,
                                     recurseIterator + 1,
                                     sequenceRange);
             }
         }
+
     }
 }

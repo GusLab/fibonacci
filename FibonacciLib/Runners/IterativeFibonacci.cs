@@ -7,18 +7,22 @@ namespace FibonacciLib.Runners
 {
     public sealed class IterativeFibonacci : FibonacciBase, IFibonacci
     {
+        public IterativeFibonacci() : base()
+        {
+        }
+
         public void Compute(long sequenceRange)
         {
             long previousNumber = 0, 
                  nextNumber = 1, 
                  sumOfPreviousAndNext = 0;
-            AddToResult(previousNumber);
-            AddToResult(nextNumber);
+            Result.Add(previousNumber);
+            Result.Add(nextNumber);
 
             for (int i = 2; i < sequenceRange; i++)
             {
                 sumOfPreviousAndNext = previousNumber + nextNumber;
-                AddToResult(sumOfPreviousAndNext);
+                Result.Add(sumOfPreviousAndNext);
                 previousNumber = nextNumber;
                 nextNumber = sumOfPreviousAndNext;
             }
